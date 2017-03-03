@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+<h1 id= "world" > Hello World! </h1>
+
+<input type="button" name="Click" value="Click" id="select" onclick="colorchange('world')" style="background:red;"/>
+<script>
+function colorchange(id) {
+
+    var background = document.getElementById(id).style.color;
+    if (background == "yellow") {
+        document.getElementById(id).style.color = "blue";
+    } else {
+        document.getElementById(id).style.color = "yellow";
+    }
+}
+</script>
+</body>
+
+
+</html>
